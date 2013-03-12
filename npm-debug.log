@@ -1,0 +1,192 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'msgpack' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json F:\git5admin\git5\codes\robais\package.json
+6 verbose read json F:\git5admin\git5\codes\robais\node_modules\eventproxy\package.json
+7 verbose read json F:\git5admin\git5\codes\robais\node_modules\formidable\package.json
+8 verbose read json F:\git5admin\git5\codes\robais\package.json
+9 verbose cache add [ 'msgpack', null ]
+10 silly cache add name=undefined spec="msgpack" args=["msgpack",null]
+11 verbose parsed url { pathname: 'msgpack', path: 'msgpack', href: 'msgpack' }
+12 silly lockFile a836d599-msgpack msgpack
+13 verbose lock msgpack C:\Users\Administrator\AppData\Roaming\npm-cache\a836d599-msgpack.lock
+14 silly lockFile a836d599-msgpack msgpack
+15 verbose addNamed [ 'msgpack', '' ]
+16 verbose addNamed [ null, '' ]
+17 silly lockFile 7f9d0373-msgpack msgpack@
+18 verbose lock msgpack@ C:\Users\Administrator\AppData\Roaming\npm-cache\7f9d0373-msgpack.lock
+19 silly addNameRange { name: 'msgpack', range: '', hasData: false }
+20 verbose url raw msgpack
+21 verbose url resolving [ 'https://registry.npmjs.org/', './msgpack' ]
+22 verbose url resolved https://registry.npmjs.org/msgpack
+23 info retry registry request attempt 1 at 13:14:29
+24 verbose etag "QE1DHBN8YNOIB9HJ17G5TRLK"
+25 http GET https://registry.npmjs.org/msgpack
+26 http 304 https://registry.npmjs.org/msgpack
+27 silly registry.get cb [ 304,
+27 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B03)',
+27 silly registry.get     etag: '"QE1DHBN8YNOIB9HJ17G5TRLK"',
+27 silly registry.get     date: 'Mon, 11 Mar 2013 05:14:33 GMT',
+27 silly registry.get     'content-length': '0' } ]
+28 verbose etag msgpack from cache
+29 silly addNameRange number 2 { name: 'msgpack', range: '', hasData: true }
+30 silly addNameRange versions [ 'msgpack',
+30 silly addNameRange   [ '0.1.2', '0.1.3', '0.1.5', '0.1.6', '0.1.7', '0.1.8' ] ]
+31 verbose addNamed [ 'msgpack', '0.1.8' ]
+32 verbose addNamed [ '0.1.8', '0.1.8' ]
+33 silly lockFile 2bfcf42c-msgpack-0-1-8 msgpack@0.1.8
+34 verbose lock msgpack@0.1.8 C:\Users\Administrator\AppData\Roaming\npm-cache\2bfcf42c-msgpack-0-1-8.lock
+35 verbose read json C:\Users\Administrator\AppData\Roaming\npm-cache\msgpack\0.1.8\package\package.json
+36 silly lockFile 2bfcf42c-msgpack-0-1-8 msgpack@0.1.8
+37 silly lockFile 7f9d0373-msgpack msgpack@
+38 silly resolved [ { name: 'msgpack',
+38 silly resolved     description: 'A space-efficient object serialization library for node.js',
+38 silly resolved     version: '0.1.8',
+38 silly resolved     homepage: 'https://github.com/pgriess/node-msgpack',
+38 silly resolved     author: { name: 'Peter Griess', email: 'pg@std.in' },
+38 silly resolved     contributors: [ [Object], [Object] ],
+38 silly resolved     repository:
+38 silly resolved      { type: 'git',
+38 silly resolved        url: 'https://github.com/pgriess/node-msgpack.git' },
+38 silly resolved     main: './lib/msgpack',
+38 silly resolved     directories: { lib: 'lib' },
+38 silly resolved     engines: { node: '>=0.8.x' },
+38 silly resolved     bin:
+38 silly resolved      { json2msgpack: './bin/json2msgpack',
+38 silly resolved        msgpack2json: './bin/msgpack2json' },
+38 silly resolved     scripts: { install: 'node-gyp rebuild' },
+38 silly resolved     gypfile: true,
+38 silly resolved     readme: '`node-msgpack` is an addon for [NodeJS](http://nodejs.org) that provides an\nAPI for serializing and de-serializing JavaScript objects using the\n[MessagePack](http://msgpack.sourceforge.net) library. The performance of this\naddon compared to the native `JSON` object is quite good, and the space\nrequired for serialized data is far less than JSON.\n\n### Performance\n\n`node-msgpack` outperforms the built-in `JSON.stringify()` and `JSON.parse()`\nmethods handily. The following tests were performed with 500,000 instances of\nthe JavaScript object `{\'abcdef\' : 1, \'qqq\' : 13, \'19\' : [1, 2, 3, 4]}`:\n\n   * `JSON.stringify()` 7.17 seconds\n   * `JSON.parse(JSON.stringify())` 22.18 seconds\n   * `msgpack.pack()` 5.80 seconds\n   * `msgpack.unpack(msgpack.pack())` 8.62 seconds\n\nNote that `node-msgpack` produces and consumes Buffer objects, and a such does\nnot incur encoding/decoding overhead when performing I/O with native strings.\n\n### Usage\n\nThis module provides two methods: `pack()`, which consumes a JavaScript object\nand produces a node Buffer object; and `unpack()`, which consumes a node Buffer\nobject and produces a JavaScript object. Packing of all native JavaScript types\n(undefined, boolean, numbers, strings, arrays and objects) is supported, as\nis the node Buffer type.\n\nThe below code snippet packs and then unpacks a JavaScript object, verifying\nthe resulting object at the end using `assert.deepEqual()`.\n\n    var assert = require(\'assert\');\n    var msgpack = require(\'msgpack\');\n\n    var o = {"a" : 1, "b" : 2, "c" : [1, 2, 3]};\n    var b = msgpack.pack(o);\n    var oo = msgpack.unpack(b);\n\n    assert.deepEqual(oo, o);\n\nAs a convenience, a higher level streaming API is provided in the\n`msgpack.Stream` class, which can be constructed around a `net.Stream`\ninstance. This object emits `msg` events when an object has been received.\n\n    var msgpack = require(\'msgpack\');\n\n    // ... get a net.Stream instance, s, from somewhere\n    \n    var ms = new msgpack.Stream(s);\n    ms.addListener(\'msg\', function(m) {\n        sys.debug(\'received message: \' + sys.inspect(m));\n    });\n\n### Type Mapping\n\nThe JavaScript type system does not map cleanly on to the MsgPack type system,\nthough it\'s pretty close.\n\nWhen packing, JavaScript values are mapped to MsgPack types as follows\n\n   * `undefined` and `null` values map to `MSGPACK_OBJECT_NIL`\n   * `boolean` values map to `MSGPACK_OBJECT_BOOLEAN`\n   * `number` values map differently depending on their value\n      * Floating point values map to `MSGPACK_OBJECT_DOUBLE`\n      * Positive values map to `MSGPACK_OBJECT_POSITIVE_INTEGER`\n      * Negative values map to `MSGPACK_OBJECT_NEGATIVE_INTEGER`\n   * `string` values map to `MSGPACK_OBJECT_RAW`; all strings are serialized\n     with UTF-8 encoding\n   * Array values (as defined by `Array.isArray()`) map to\n     `MSGPACK_OBJECT_ARRAY`; each element in the array is packed individually\n     the rules in this list\n   * NodeJS Buffer values map to `MSGPACK_OBJECT_RAW`\n   * Everything else maps to `MSGPACK_OBJECT_MAP`, where we iterate over the object\'s\n     properties and pack them and their values as per the mappings in this list\n\nWhen unpacking, MsgPack types are mapped to JavaScript values as follows\n\n   * `MSGPACK_OBJECT_NIL` values map to the `null` value\n   * `MSGPACK_OBJECT_BOOLEAN` values map to `boolean` values\n   * `MSGPACK_OBJECT_POSITIVE_INTEGER`, `MSGPACK_OBJECT_NEGATIVE_INTEGER` and\n     `MSGPACK_OBJECT_DOUBLE` values map to `number` values\n   * `MSGPACK_OBJECT_ARRAY` values map to arrays; each object in the array is\n      packed individually using the rules in this list\n   * `MSGPACK_OBJECT_RAW` values are mapped to `string` values; these values are\n     unpacked using either UTF-8 or ASCII encoding, depending on the contents\n     of the raw buffer\n   * `MSGPACK_OBJECT_MAP` values are mapped to JavaScript objects; keys and values\n     are unpacked individually using the rules in this list\n\nStrings are particularly problematic here, as it\'s difficult to get hints down\ninto the packing and unpacking codepaths about how to interpret a particular\nstring or `MSGPACK_OBJECT_RAW`. If you have strict requirements about the\nencoding of your strings, it\'s recommended that you populate a Buffer object\nyourself (e.g. using `Buffer.write()`) and pack that buffer rather than the\nstring. This will ensure that you can control what gets packed.\n\nWhen unpacking, things are trickier as there is no way to know the encoding\nused when a string was packed. There is an [an open\nticket](http://github.com/msgpack/msgpack/issues/issue/13) for the MsgPack\nformat to address this.\n\n### Command Line Utilities\n\nAs a convenience and for debugging, `bin/json2msgpack` and `bin/msgpack2json`\nare provided to convert JSON data to and from MessagePack data, reading from\nstdin and writing to stdout.\n\n    % echo \'[1, 2, 3]\' | ./bin/json2msgpack | xxd -\n    0000000: 9301 0203                                ....\n    % echo \'[1, 2, 3]\' | ./bin/json2msgpack | ./bin/msgpack2json \n    [1,2,3]\n\n### Building and installation\n\nThere are two ways to install msgpack.\n\n## npm\n\n\t\tnpm install msgpack\n\nThis should build and install msgpack for you. Then just `require(\'msgpack\')`.\n\n## Manually\n\nUse `make` to build the add-on, then manually copy `build/default/mpBindings.node` \nand `lib/msgpack.js` it to wherever your node.js installation will look for it (or\nadd the build directory to your `$NODE_PATH`).\n\n    % ls\n    LICENSE  Makefile  README.md  deps/  src/  tags  test.js\n    % make\n\nThe MessagePack library on which this depends is packaged with `node-msgpack`\nand will be built as part of this process.\n\n**Note:** MessagePack may fail to build if you do not have a modern version of\ngcc in your `$PATH`. On Mac OS X Snow Leopard (10.5.x), you may have to use\n`gcc-4.2`, which should come with your box but is not used by default.\n\n    % make CC=gcc-4.2 CXX=gcc-4.2\n',
+38 silly resolved     _id: 'msgpack@0.1.8',
+38 silly resolved     _from: 'msgpack' } ]
+39 info install msgpack@0.1.8 into F:\git5admin\git5\codes\robais
+40 info installOne msgpack@0.1.8
+41 verbose from cache C:\Users\Administrator\AppData\Roaming\npm-cache\msgpack\0.1.8\package\package.json
+42 info F:\git5admin\git5\codes\robais\node_modules\msgpack unbuild
+43 verbose read json F:\git5admin\git5\codes\robais\node_modules\msgpack\package.json
+44 verbose tar unpack C:\Users\Administrator\AppData\Roaming\npm-cache\msgpack\0.1.8\package.tgz
+45 silly lockFile 3a5e6e27-odes-robais-node-modules-msgpack F:\git5admin\git5\codes\robais\node_modules\msgpack
+46 verbose lock F:\git5admin\git5\codes\robais\node_modules\msgpack C:\Users\Administrator\AppData\Roaming\npm-cache\3a5e6e27-odes-robais-node-modules-msgpack.lock
+47 silly gunzTarPerm modes [ '777', '666' ]
+48 silly gunzTarPerm extractEntry package.json
+49 silly gunzTarPerm extractEntry .npmignore
+50 silly gunzTarPerm extractEntry README.md
+51 silly gunzTarPerm extractEntry LICENSE
+52 silly gunzTarPerm extractEntry bench.js
+53 silly gunzTarPerm extractEntry test/test-stream-disjoint.js
+54 silly gunzTarPerm extractEntry test/test-stream.js
+55 silly gunzTarPerm extractEntry test/test-unpack-extra.js
+56 silly gunzTarPerm extractEntry test/test.js
+57 silly gunzTarPerm extractEntry bin/json2msgpack
+58 silly gunzTarPerm extractEntry bin/msgpack2json
+59 silly gunzTarPerm extractEntry binding.gyp
+60 silly gunzTarPerm extractEntry deps/msgpack/LICENSE
+61 silly gunzTarPerm extractEntry deps/msgpack/msgpack.hpp
+62 silly gunzTarPerm extractEntry deps/msgpack/gcc_atomic.cpp
+63 silly gunzTarPerm extractEntry deps/msgpack/AUTHORS
+64 silly gunzTarPerm extractEntry deps/msgpack/msgpack/unpack.h
+65 silly gunzTarPerm extractEntry deps/msgpack/msgpack/object.h
+66 silly gunzTarPerm extractEntry deps/msgpack/msgpack/pack.h
+67 silly gunzTarPerm extractEntry deps/msgpack/msgpack/pack.hpp
+68 silly gunzTarPerm extractEntry deps/msgpack/msgpack/pack_define.h
+69 silly gunzTarPerm extractEntry deps/msgpack/msgpack/pack_template.h
+70 silly gunzTarPerm extractEntry deps/msgpack/msgpack/sbuffer.h
+71 silly gunzTarPerm extractEntry deps/msgpack/msgpack/sbuffer.hpp
+72 silly gunzTarPerm extractEntry deps/msgpack/msgpack/sysdep.h
+73 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/nil.hpp
+74 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/bool.hpp
+75 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/deque.hpp
+76 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/fixint.hpp
+77 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/float.hpp
+78 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/int.hpp
+79 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/list.hpp
+80 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/map.hpp
+81 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/define.hpp
+82 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/pair.hpp
+83 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/raw.hpp
+84 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/set.hpp
+85 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/string.hpp
+86 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/tr1/unordered_map.hpp
+87 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/tr1/unordered_set.hpp
+88 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/tuple.hpp
+89 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type/vector.hpp
+90 silly gunzTarPerm extractEntry deps/msgpack/msgpack/type.hpp
+91 silly gunzTarPerm extractEntry deps/msgpack/msgpack/object.hpp
+92 silly gunzTarPerm extractEntry deps/msgpack/msgpack/unpack.hpp
+93 silly gunzTarPerm extractEntry deps/msgpack/msgpack/unpack_define.h
+94 silly gunzTarPerm extractEntry deps/msgpack/msgpack/unpack_template.h
+95 silly gunzTarPerm extractEntry deps/msgpack/msgpack/version.h
+96 silly gunzTarPerm extractEntry deps/msgpack/msgpack/vrefbuffer.h
+97 silly gunzTarPerm extractEntry deps/msgpack/msgpack/vrefbuffer.hpp
+98 silly gunzTarPerm extractEntry deps/msgpack/msgpack/zbuffer.h
+99 silly gunzTarPerm extractEntry deps/msgpack/msgpack/zbuffer.hpp
+100 silly gunzTarPerm extractEntry deps/msgpack/msgpack/zone.h
+101 silly gunzTarPerm extractEntry deps/msgpack/msgpack/zone.hpp
+102 silly gunzTarPerm extractEntry deps/msgpack/msgpack.gyp
+103 silly gunzTarPerm extractEntry deps/msgpack/msgpack.h
+104 silly gunzTarPerm extractEntry deps/msgpack/COPYING
+105 silly gunzTarPerm extractEntry deps/msgpack/object.cpp
+106 silly gunzTarPerm extractEntry deps/msgpack/objectc.c
+107 silly gunzTarPerm extractEntry deps/msgpack/unpack.c
+108 silly gunzTarPerm extractEntry deps/msgpack/version.c
+109 silly gunzTarPerm extractEntry deps/msgpack/vrefbuffer.c
+110 silly gunzTarPerm extractEntry deps/msgpack/zone.c
+111 silly gunzTarPerm extractEntry src/msgpack.cc
+112 silly gunzTarPerm extractEntry lib/msgpack.js
+113 verbose read json F:\git5admin\git5\codes\robais\node_modules\msgpack\package.json
+114 silly lockFile 3a5e6e27-odes-robais-node-modules-msgpack F:\git5admin\git5\codes\robais\node_modules\msgpack
+115 info preinstall msgpack@0.1.8
+116 verbose from cache F:\git5admin\git5\codes\robais\node_modules\msgpack\package.json
+117 verbose readDependencies using package.json deps
+118 verbose from cache F:\git5admin\git5\codes\robais\node_modules\msgpack\package.json
+119 verbose readDependencies using package.json deps
+120 silly resolved []
+121 verbose about to build F:\git5admin\git5\codes\robais\node_modules\msgpack
+122 info build F:\git5admin\git5\codes\robais\node_modules\msgpack
+123 verbose from cache F:\git5admin\git5\codes\robais\node_modules\msgpack\package.json
+124 verbose linkStuff [ false,
+124 verbose linkStuff   false,
+124 verbose linkStuff   false,
+124 verbose linkStuff   'F:\\git5admin\\git5\\codes\\robais\\node_modules' ]
+125 info linkStuff msgpack@0.1.8
+126 verbose linkBins msgpack@0.1.8
+127 verbose link bins [ { json2msgpack: './bin/json2msgpack',
+127 verbose link bins     msgpack2json: './bin/msgpack2json' },
+127 verbose link bins   'F:\\git5admin\\git5\\codes\\robais\\node_modules\\.bin',
+127 verbose link bins   false ]
+128 verbose linkMans msgpack@0.1.8
+129 verbose rebuildBundles msgpack@0.1.8
+130 info install msgpack@0.1.8
+131 verbose unsafe-perm in lifecycle true
+132 silly exec cmd "/c" "node-gyp rebuild"
+133 silly cmd,/c,node-gyp rebuild,F:\git5admin\git5\codes\robais\node_modules\msgpack spawning
+134 info msgpack@0.1.8 Failed to exec install script
+135 info F:\git5admin\git5\codes\robais\node_modules\msgpack unbuild
+136 verbose from cache F:\git5admin\git5\codes\robais\node_modules\msgpack\package.json
+137 info preuninstall msgpack@0.1.8
+138 info uninstall msgpack@0.1.8
+139 verbose true,F:\git5admin\git5\codes\robais\node_modules,F:\git5admin\git5\codes\robais\node_modules unbuild msgpack@0.1.8
+140 verbose F:\git5admin\git5\codes\robais\node_modules\.bin,[object Object] binRoot
+141 info postuninstall msgpack@0.1.8
+142 error msgpack@0.1.8 install: `node-gyp rebuild`
+142 error `cmd "/c" "node-gyp rebuild"` failed with 1
+143 error Failed at the msgpack@0.1.8 install script.
+143 error This is most likely a problem with the msgpack package,
+143 error not with npm itself.
+143 error Tell the author that this fails on your system:
+143 error     node-gyp rebuild
+143 error You can get their info via:
+143 error     npm owner ls msgpack
+143 error There is likely additional logging output above.
+144 error System Windows_NT 6.1.7600
+145 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "msgpack"
+146 error cwd F:\git5admin\git5\codes\robais
+147 error node -v v0.8.8
+148 error npm -v 1.1.59
+149 error code ELIFECYCLE
+150 verbose exit [ 1, true ]
