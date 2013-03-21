@@ -1,0 +1,300 @@
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=1558E
+7225A55F925F3FA28F22246264EA410CE7D&city=%E4%B8%8A%E6%B5%B7&latitude=31.21524&lo
+ngitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%AE%81%E5%8C%B
+A&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword=%E6%B3%B0%E
+5%9B%BD%E8%8F%9C&sort=7
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=1558E
+7225A55F925F3FA28F22246264EA410CE7D&city=%E4%B8%8A%E6%B5%B7&latitude=31.21524&lo
+ngitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%AE%81%E5%8C%B
+A&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword=%E6%B3%B0%E
+5%9B%BD%E8%8F%9C&sort=7
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海has_coupon1has_deal1keyword泰国菜latitude31.21524l
+imit20longitude121.420033offset_type2radius2000region长宁区sort749fb557ce29249a3
+b9f299accdd6df2d 1558E7225A55F925F3FA28F22246264EA410CE7D
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=1558E
+7225A55F925F3FA28F22246264EA410CE7D&city=%E4%B8%8A%E6%B5%B7&latitude=31.21524&lo
+ngitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%AE%81%E5%8C%B
+A&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword=%E6%B3%B0%E
+5%9B%BD%E8%8F%9C&sort=7
+7453042558category美食city上海has_coupon1has_deal1keyword泰国菜latitude31.21524l
+imit20longitude121.420033offset_type2radius2000region长宁区sort749fb557ce29249a3
+b9f299accdd6df2d 1558E7225A55F925F3FA28F22246264EA410CE7D
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=1558E
+7225A55F925F3FA28F22246264EA410CE7D&city=%E4%B8%8A%E6%B5%B7&latitude=31.21524&lo
+ngitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%AE%81%E5%8C%B
+A&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword=%E6%B3%B0%E
+5%9B%BD%E8%8F%9C&sort=7
+^C
+F:\dianping>npm install sha1
+npm http GET https://registry.npmjs.org/sha1
+npm http 200 https://registry.npmjs.org/sha1
+npm http GET https://registry.npmjs.org/sha1/-/sha1-1.0.1.tgz
+npm http 200 https://registry.npmjs.org/sha1/-/sha1-1.0.1.tgz
+npm http GET https://registry.npmjs.org/charenc
+npm http GET https://registry.npmjs.org/crypt
+npm http 200 https://registry.npmjs.org/crypt
+npm http 200 https://registry.npmjs.org/charenc
+npm http GET https://registry.npmjs.org/crypt/-/crypt-0.0.1.tgz
+npm http GET https://registry.npmjs.org/charenc/-/charenc-0.0.1.tgz
+npm http 200 https://registry.npmjs.org/crypt/-/crypt-0.0.1.tgz
+npm http 200 https://registry.npmjs.org/charenc/-/charenc-0.0.1.tgz
+sha1@1.0.1 node_modules\sha1
+├── crypt@0.0.1
+└── charenc@0.0.1
+
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海has_coupon1has_deal1keyword泰国菜latitude31.21524l
+imit20longitude121.420033offset_type2radius2000region长宁区sort749fb557ce29249a3
+b9f299accdd6df2d 73F6D173E24422320FC302C13D7B1007E6FF3F46
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=73F6D
+173E24422320FC302C13D7B1007E6FF3F46&city=%E4%B8%8A%E6%B5%B7&latitude=31.21524&lo
+ngitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%AE%81%E5%8C%B
+A&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword=%E6%B3%B0%E
+5%9B%BD%E8%8F%9C&sort=7
+7453042558category美食city上海has_coupon1has_deal1keyword泰国菜latitude31.21524l
+imit20longitude121.420033offset_type2radius2000region长宁区sort749fb557ce29249a3
+b9f299accdd6df2d 73F6D173E24422320FC302C13D7B1007E6FF3F46
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=73F6D
+173E24422320FC302C13D7B1007E6FF3F46&city=%E4%B8%8A%E6%B5%B7&latitude=31.21524&lo
+ngitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%AE%81%E5%8C%B
+A&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword=%E6%B3%B0%E
+5%9B%BD%E8%8F%9C&sort=7
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海has_coupon1has_deal1keyword泰国菜latitude31.21524l
+imit20longitude121.420033offset_type2radius2000region长宁区sort749fb557ce29249a3
+b9f299accdd6df2d 73F6D173E24422320FC302C13D7B1007E6FF3F46
+7453042558category美食city上海has_coupon1has_deal1keyword泰国菜latitude31.21524l
+imit20longitude121.420033offset_type2radius2000region长宁区sort749fb557ce29249a3
+b9f299accdd6df2d 73F6D173E24422320FC302C13D7B1007E6FF3F46
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=D9A1A
+1D5E4FC365DF06F6E399225E6528167D88F&format=json&city=%E4%B8%8A%E6%B5%B7&latitude
+=31.21524&longitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%A
+E%81%E5%8C%BA&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword
+=%E6%B3%B0%E5%9B%BD%E8%8F%9C&sort=7
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+http://api.dianping.com/v1/business/find_businesses?appkey=7453042558&sign=D9A1A
+1D5E4FC365DF06F6E399225E6528167D88F&format=json&city=%E4%B8%8A%E6%B5%B7&latitude
+=31.21524&longitude=121.420033&category=%E7%BE%8E%E9%A3%9F&region=%E9%95%BF%E5%A
+E%81%E5%8C%BA&limit=20&radius=2000&offset_type=2&has_coupon=1&has_deal=1&keyword
+=%E6%B3%B0%E5%9B%BD%E8%8F%9C&sort=7
+^C
+F:\dianping>^A
+
+F:\dianping>node server.js
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module './sha1'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:362:17)
+    at require (module.js:378:17)
+    at Object.<anonymous> (F:\dianping\makeurl.js:1:76)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:362:17)
+
+F:\dianping>node server.js
+server started at port 80
+
+F:\dianping\makeurl.js:48
+     var sign = new String(toSHA1(shaSource)).toUpperCase();
+                           ^
+TypeError: undefined is not a function
+    at Object.getUrl (F:\dianping\makeurl.js:48:28)
+    at Server.<anonymous> (F:\dianping\server.js:12:25)
+    at Server.EventEmitter.emit (events.js:91:17)
+    at HTTPParser.parser.onIncoming (http.js:1793:12)
+    at HTTPParser.parserOnHeadersComplete [as onHeadersComplete] (http.js:111:23
+)
+    at Socket.socket.ondata (http.js:1690:22)
+    at TCP.onread (net.js:402:27)
+
+F:\dianping>node server.js
+server started at port 80
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d BA756EF2DCCEF56DA24BE69E23E4D0CBC725D82F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d BA756EF2DCCEF56DA24BE69E23E4D0CBC725D82F
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+^C
+F:\dianping>node server.js
+
+module.js:340
+    throw err;
+          ^
+Error: Cannot find module './bufferHelper'
+    at Function.Module._resolveFilename (module.js:338:15)
+    at Function.Module._load (module.js:280:25)
+    at Module.require (module.js:362:17)
+    at require (module.js:378:17)
+    at Object.<anonymous> (F:\dianping\server.js:6:79)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+数据格式不正确
+
+F:\dianping\server.js:34
+                                console.log(json.status);
+                                                ^
+TypeError: Cannot read property 'status' of undefined
+    at IncomingMessage.<anonymous> (F:\dianping\server.js:34:21)
+    at IncomingMessage.EventEmitter.emit (events.js:115:20)
+    at IncomingMessage._emitEnd (http.js:366:10)
+    at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23
+)
+    at Socket.socketOnData [as ondata] (http.js:1366:20)
+    at TCP.onread (net.js:402:27)
+
+F:\dianping>
+
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+{"status":"OK","count":0,"businesses":[]}
+数据格式不正确
+
+F:\dianping\server.js:35
+                                console.log(json.status);
+                                                ^
+TypeError: Cannot read property 'status' of undefined
+    at IncomingMessage.<anonymous> (F:\dianping\server.js:35:21)
+    at IncomingMessage.EventEmitter.emit (events.js:115:20)
+    at IncomingMessage._emitEnd (http.js:366:10)
+    at HTTPParser.parserOnMessageComplete [as onMessageComplete] (http.js:149:23
+)
+    at Socket.socketOnData [as ondata] (http.js:1366:20)
+    at TCP.onread (net.js:402:27)
+
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+{"status":"OK","count":0,"businesses":[]}
+数据格式不正确
+^C
+F:\dianping>node server.js
+server started at port 80
+7453042558category美食city上海formatjsonhas_coupon1has_deal1keyword泰国菜latitud
+e31.21524limit20longitude121.420033offset_type2radius2000region长宁区sort749fb55
+7ce29249a3b9f299accdd6df2d D9A1A1D5E4FC365DF06F6E399225E6528167D88F
+{"status":"OK","count":0,"businesses":[]}
+TypeError
+Cannot read property '0' of undefined
+数据格式不正确
+^C
+F:\dianping>
+
+F:\dianping>^A
+
+F:\dianping>^A
