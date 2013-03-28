@@ -1,0 +1,96 @@
+/*******************重置html样式*******************/
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,input,p,blockquote,th,td,form{margin:0;padding:0;}
+ol,ul,li,dd,dt,dl{ list-style:none;}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal;}
+img{border:0;}
+caption,th{text-align:left;}
+table{border-collapse:collapse;empty-cells:show;}
+input,select,textarea{font-size:16px;}
+textarea {}
+body{font-size:12px;overflow-x:hidden;font-family: "Microsoft YaHei";}
+}
+/*******************可重用样式*******************/
+/*-----清理浮动---*/
+.clearfix:after{
+content:"."; display:block; height:0; clear:both;
+visibility:hidden;
+}
+*html .clearfix{
+ height:1%;
+}
+*+html .clearfix{
+ height:1%;
+}
+/*-----显示模式---*/
+.none{display:none;}
+.block{display:block;}
+.inline{display:inline;}
+.hidden{overflow:hidden;}
+/*-----对齐方式----*/
+.l{float:left;}
+.r{float:right;}
+.clear{clear:both;height:0px;font-size:0px;line-height:0px;over-flow:hidden;}
+* html .clear {display:inline;}
+.a-c{text-align:center;margin:0 auto;}
+.a-l{text-align:left;}
+.a-r{text-align:right;}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-----margin----*/
+.mar-t6{margin-top:6px;}
+.m8{margin:0 8px}
+/*-----width----*/
+.w100{width:100px;}
+/*-----padding----*/
+.pad5{padding:0 5px;}
+.padR5{padding:0 5px 0 0;}
+/*-----height----*/
+.h25{height:25px}
+/*-----font size----*/
+.font_12{font-size:12px;}
+.bold{font-weight:bold;}
+.normal{font-weight:normal;}
+/*-------背景颜色------*/
+.bgred{background:red;}
+/*-------字体颜色------*/
+.red{color:#b70a03;}
+/*------模块标题-----*/
+h2{height:40px; line-height:40px; font-size:20px;}
+/*------页面留白-----*/
+.blank{height:8px; line-height:8px; clear:both; visibility:hidden;}
+.blank5{height:5px; line-height:5px;/* _margin:-3px 0;*/ clear:both; visibility:hidden;}
+/*------border-----*/
+.bor-gray{border:1px #CCCCCC solid;}
+/*-------a------*/
+a{color:#03F; text-decoration:none;}
+a:hover{color:#333;}
+/*------垂直居中-----*/
+.middleOuter{
+	display:table-cell;
+	vertical-align: middle;
+	*position:absolute;
+	top:50%;
+}
+.middleInner{
+	*position:relative;
+	*top:-50%;
+}
+.outer{
+display: table;   
+*position: relative; 
+}
+label, input {
+	vertical-align: middle;
+}
+/*------line-----*/
+.bottomLine{
+border-bottom:1px solid black;
+}
+/*------button-----*/
+.btn{border:1px solid #BDBDBB;background-color:#E6E6E4;padding:2px 0px;}
+
+/*------遮罩层-----*/
+.yijs_mask{	background-color:#333;filter:alpha(opacity=50);-moz-opacity: 0.5;opacity: 0.5;position:absolute;top:0px;left:0px;}
+.yijs_iframe{display:block;position:absolute;z-index:999;position:absolute;top:0px;left:0px;filter:alpha(opacity=0);-moz-opacity: 0;opacity: 0;}

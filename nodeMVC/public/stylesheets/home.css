@@ -1,0 +1,8 @@
+body {
+    background: #FFF url(../images/blueprint.png);
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+.full{
+    width: 90%;
+    border: 1px solid #000;
+}
